@@ -17,5 +17,5 @@ notifications:
   slack:
     rooms:
       - thecodingnerd256:KwKTkJ113gJF0llSrHDv5ENt#githubio
-    on_success: change # default: always
+    on_success: always # default: always
     on_failure: always # default: always
