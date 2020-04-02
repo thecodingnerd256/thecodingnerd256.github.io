@@ -14,3 +14,4 @@ notifications:
     - thecodingnerd256@gmail.com
     on_success: change
     on_failure: always
+  slack: thecodingnerd256:KwKTkJ113gJF0llSrHDv5ENt
