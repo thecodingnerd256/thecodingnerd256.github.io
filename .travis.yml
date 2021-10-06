@@ -1,17 +1,18 @@
 language: node_js
-sudo: required
+os: linux
+dist: xenial
 node_js:
-- 10
+  - 10
 before_install:
-- npm install -g qunit
-- npm install file-system
-- npm install eslint
+  - npm install -g qunit
+  - npm install file-system
+  - npm install eslint
 script:
-- qunit
+  - qunit
 notifications:
   email:
     recipients:
-    - thecodingnerd256@gmail.com
+      - thecodingnerd256@gmail.com
     on_success: change
     on_failure: always
   slack:
