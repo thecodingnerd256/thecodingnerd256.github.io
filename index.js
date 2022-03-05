@@ -70,7 +70,8 @@ insert_cards = function(start_card, end_card) {
 		};
 
 		for(let i = start_card; i < end_card; i++) {
-	        rand_key = obj_keys[Math.floor(Math.random() * obj_keys.length)];
+	        // rand_key = obj_keys[Math.floor(Math.random() * obj_keys.length)];
+	        rand_key = obj_keys[Math.floor(i)];
 	        obj_keys = obj_keys.filter(filter_func);
 	        rand_project = projects[rand_key];
 
