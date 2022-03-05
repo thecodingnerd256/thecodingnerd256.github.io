@@ -1,0 +1,207 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	color: black;
+	font-size: 1.5rem;
+}
+
+.jumbotron {
+	background: #0e6e28;
+	display: block;
+}
+
+.jumbotron h1, h3, h4 {
+	color: white;
+}
+
+#intro {
+	font-size: 1.2em;
+}
+
+.link-div {
+	width: 75%;
+	display:flex;
+	text-align: center;
+	align-content: center;
+}
+
+.link-div a {
+	flex-basis:100%;
+	color: white;
+	font-size: 1.25em;
+	width: 85%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+}
+
+.link-div a span {
+	display: inline-block;
+	transform:scale(1);
+}
+
+.link-div a:hover span {
+	/*font-size: 1.35em;*/
+	text-decoration: none;
+	transform: scale(1.2);
+}
+
+#profile-box {
+	text-align: center;
+	font-size: 1.3rem;
+	border-color: white;
+}
+
+#profile-box img {
+	max-width: 70%;
+	max-height: 70%;
+	border-color: white;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.flip-container img {
+  	max-width: 80%;
+}
+
+.flip-container {
+	max-width: 100%;
+	margin: 4px;
+	perspective: 1000;
+	display: inline-block;
+}
+
+.flip-container:hover .card {
+  	transform: rotateY(180deg);
+}
+
+.card, .front, .back {
+	border: none;
+	width: 256px;
+	height: 256px;
+}
+
+.card {
+	transition: 0.75s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+}
+
+.front {
+	z-index: 1;
+	transform: rotateY(180deg);
+	border-radius: 0px;
+}
+
+.front img {
+	border-radius: 50%;
+}
+
+.back {
+	z-index: 2; /* back side, placed above front */
+	transform: rotateY(0deg);
+}
+
+.back img {
+	border-radius: 50%;
+}
+
+.youtube {
+	background: #e23838;
+	font-color: white;
+}
+
+.githubio {
+	background: #188e45;
+	font-color: white;
+}
+
+.github-profile {
+	background: #345d9b;
+	font-color: white;
+}
+
+.project-card {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px black;
+	border-radius: 4px;
+	max-width: 100%;
+	height: auto;
+	/*overflow: hidden;*/
+}
+
+.project-card h4 {
+	color: #cccccc;
+	background: #cccccc;
+	font-size: 1.4rem;
+}
+
+.project-card a {
+	color: #cccccc;
+	background: #cccccc;
+	font-size: 1.1rem;
+}
+
+.project-card p {
+	color: #cccccc;
+	background: #cccccc;
+}
+
+.project-card img {
+	background-image:url('imgs/p_default.jpg');
+	max-width: 75%;
+	height: auto;
+}
+
+.project-card:hover img{
+	max-width: 100%;
+	transition: 0.3s all;
+}
+
+#external_link img{
+	margin: 2em;
+	border-radius: 0.5em;
+}
+
+footer .links a:hover span{
+	text-decoration: none;
+	color: white;
+	transform:scale(1.2)
+}
+
+footer .links {
+	display:flex;
+}
+
+@media (max-width: 620px) {
+	footer .links {
+		flex-wrap:wrap
+	}
+}
+
+footer .links a {
+	padding:20px;
+	flex-basis:100%;
+	text-align:center;
+	font-family:"cubanoregular";
+	letter-spacing:.4;
+	text-decoration:none;
+	color:#FFF;
+	margin:0
+}
+
+footer .links a span {
+	font-color: white;
+	display:inline-block;
+	font-size:1.5em;
+	transition:all 150ms cubic-bezier(.4, 0, .2, 1);
+	transform:scale(1)
+}
