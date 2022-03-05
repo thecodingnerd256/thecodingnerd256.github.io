@@ -11,4 +11,6 @@ with the projects that I have created and published on
 to have a browse and if you feel up to it why don't you create your own version
 of one of these fun little projects and link to it in this repo.
 
+Github Io [website](https://thecodingnerd256.github.io/)
+
 Author: [The Coding Nerd 256](mailto:thecodingnerd256@gmail.com)

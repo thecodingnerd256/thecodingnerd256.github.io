@@ -4,15 +4,16 @@ dist: xenial
 node_js:
   - 10
 before_install:
-  - npm install -g qunit
-  - npm install file-system
-  - npm install eslint
+- npm install -g qunit@2.9.2
+- npm install file-system@2.2.2
+- npm install eslint@6.4.0
+- npm install image-size@0.8.3
 script:
   - qunit
 notifications:
   email:
     recipients:
-    - thecodingnerd256@gmail.com
+    - thecodingnerd256+travisci@gmail.com
     on_success: change
     on_failure: always
   slack:
