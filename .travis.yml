@@ -1,16 +1,22 @@
 language: node_js
-sudo: required
+os: linux
+dist: xenial
 node_js:
-- 8
+  - 10
 before_install:
-- npm install -g qunit
-- npm install file-system
-- npm install eslint
+  - npm install -g qunit
+  - npm install file-system
+  - npm install eslint
 script:
-- qunit
+  - qunit
 notifications:
   email:
     recipients:
     - thecodingnerd256@gmail.com
     on_success: change
+    on_failure: always
+  slack:
+    rooms:
+      secure: BAINj6fa+VBPxLz3oITKZzQiN5ZVOFrF0/H+WLwh/tJ5M9k08jdGd3RtMuoLVLykB1VEgLsr731K+MTvp2F3tR7VjlzPdzPDiMpRYlqVHKwG7jE52OwxEFP0GbcJxq0TBLl8Becg+hEXQqk7RK6omg8KXJj5FhCyaBGdB4oAjJnhXe3tRDAW00bOkknEa3yarhjpa7tWJ5GRb4crYmUgop+k0PPM7IGSABziJsrLc2V4q44WdeGdcjuUQZQhaKOa+FfkT5qrrucBPUyhiIy9UFN5oU2LyBYuxhPqzLJMnRoLA9VaQ1GOb5GALAa38bC/VBUdi1wyyeek1poRTmqNMtnKESw366oJRndzZaiu+F/jm9uGjwKjFwItg3UcNHNSVeFB1y7KRMc4AE9RZAeYtMxB1lrBa2t1jcex9ARA7nLv9jr+Lvs9XKPZtNdQ2klL9eMoLQV9BfBkzCoFVOnUMvVzqy54IzbsQGzClk7bJfJrKNVZftikPMQvKB25ZsuTS+STSVyjtwaPAg/UHgtKSUOiPKNN6i2r34NgGr6eehccRDC14UkbK+lbRXgOTsAkC73FT6GiWEdlaPzpIN6WBIe2jA/C4oSrDiafrCQQGqeJlPmHTL0NerYqVPDkUWzSvEqX2f5bQ3t0Pudu5jtBqM8ewlSDuhgTkSrtTnLY3mU=
+    on_success: always
     on_failure: always
